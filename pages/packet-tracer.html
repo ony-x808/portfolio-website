@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Alexander's Portfolio</title>
+    <link href="../assets/styles.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  </head>
+  
+  <body data-bs-theme="dark">
+
+
+
+<nav style="background-color: #e3f2fd;" data-bs-theme="light">
+<ul class="nav navbar justify-content-center nav-pills nav-fill" style="margin-left: 5%;">
+  <li class="nav-item">
+    <a class="nav-link" style="color:black;" href="../index.html">Home</a>
+  </li>
+
+  <li class="nav-item">
+    <a class="nav-link" style="color:black;" href="/pages/qualifications.html">Qualifications</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active bg-dark" aria-current="page" href="#">Experience</a>
+  </li>
+
+    <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" style="color:black;" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Contact</a>
+    <ul class="dropdown-menu bg-dark text-light">
+      <div class="px-4 py-3">
+    <div class="mb-3">
+      <label for="exampleDropdownFormEmail1" class="form-label">Email address:</label>
+      <p>doylealex27@gmail.com</p>
+    </div>
+    <br>
+    <div class="mb-3">
+      <label for="exampleDropdownFormPassword1" class="form-label">Phone:</label>
+      <p>(727) 455-9111</p>
+    </div>
+    <br>
+    <div class="mb-3">
+      <label for="exampleDropdownFormPassword1" class="form-label">Located in:</label>
+      <p>Palmetto, FL 34221</p>
+    </div>
+  </div>
+  <div class="dropdown-divider"></div>
+<div class="btn-group" role="group" aria-label="Basic mixed styles example" style="margin-left: 11%;">
+  <a type="button" class="btn btn-outline-light" href="https://www.linkedin.com/in/alexander-doyle-information-technology">LinkedIN</a>
+  <a type="button" class="btn btn-outline-light" href="https://github.com/ony-x808" style="background-color: black;"><span style="color: black;">f</span>Github<span style="color: black;">f</span></a>
+</div>
+  
+  </ul>
+  </li>
+</ul>
+</nav>
+
+<br>
+
+
+<section id="scrollspyHeading1" class="container mt-5">
+        <h2 class="text-center">Project Title: Small Office Network with VLANs and DHCP</h2>
+        <br>
+                <div class="text-center">
+            <img src="../assets/images/packet-tracer/ciscofront.png" alt="Topology" class="img-fluid rounded" style="width: 50%; height: auto;">
+        </div>
+        <br>
+        <h3>Objective:</h3>
+        <li>Configure a multi-VLAN network for different departments.</li>
+        <li>Set up DHCP for automatic IP assignment.</li>
+        <li>Enable Inter-VLAN routing so departments can communicate securely.</li>
+        <li>Implement basic security (passwords, SSH access).</li>
+        <br>
+        <hr class="text-primary">
+        </section>
+
+
+        <section id="scrollspyHeading2" class="container mt-5">
+        <h2 class="text-center">Setting Up and Connecting Devices</h2>
+        <br>
+        <p class="text-center">All that was done here was use the straight through wires to connect the Router's Gig0/0 port to the Switch's Gig1/0/1 port. Then each PC with the same cable to the switch.</p>
+        
+        <p class="text-center">Used straight-through cables as they are used for switch to router and switch to PC connections.</p>
+        <p class="text-center">The router will route traffic between VLANs, while the switch handles VLAN segmentation.</p>
+        <br>
+        <div class="text-center">
+        <img src="../assets/media/configedvlans.png" alt="Topology" class="img-fluid rounded pissed" style="width: 50%; height: auto;">
+        </div>
+        <h3>Devices</h3>
+        <li>1 Router (Cisco 1941) - Handles routing between VLANs.</li>
+        <li>1 Switch (Cisco 2960) - Connects end devices and manages VLANs.</li>
+        <li>4 PCs (one for each department: HR, IT, Sales and Guests users).</li>
+    
+        <br>
+        
+        <hr class="text-primary">
+        <br>
+        <h2 class="text-center">Configuring VLANs on the Switch</h2>
+        <br>
+        <div class="text-center">
+        <h3>Creating the VLANs</h3>
+        <p>Used the Switches CLI (Command Line Interface).</p>
+          <img src="../assets/media/portconfig.png" alt="Configuring Ports to VLANs" class="img-fluid rounded" style="width: 50%; height: auto;">
+          <p>This creates the VLANs and assigns names to them.</p>
+        <p>This is to ensure security and traffic management as any of these departments should not see eachothers traffic.</p>
+        <br>
+        <h3>Assigning Ports to VLANs</h3>
+        <p>Assigned each PC to its respective VLAN:</p>
+          <img src="../assets/media/configuringPortToVlan.png" alt="Configuring Ports" class="img-fluid rounded" style="width: 50%; height: auto;">
+          <p>Each PC is isolated in its own VLAN unless routing is configured.</p>
+          <br>
+          <h3>Configuring the Trunk Port (Router Connection)</h3>
+          <p>The switch port connected to the router has to carry all VLAN traffic.</p>
+          <img src="../assets/media/trunkswitchconfig.png" alt="Configuring Trunk Port" class="img-fluid rounded" style="width: 50%; height: auto;">
+          <p>A trunk port allows multiple VLANs to pass through the router.</p>
+          <br>
+        </div>
+        <hr class="text-primary">
+        <br>
+        <div class="text-center">
+        <h2 class="text-center">Configure the Router for Inter-VLAN Routing</h2>
+        <br>
+        <h3>Enabled Sub Interfaces</32>
+        <p>Entered the Router CLI and configured sub interfaces for each VLAN.</p>
+        <img src="../assets/media/encapsulation.png" alt="Configuring Sub Interfaces" class="img-fluid rounded" style="width: 50%; height: auto;">
+        <p>Sub interfaces allow the router to route traffic between VLANs.</p>
+        <p>Each VLAN get it's own IP subnet.</p>
+        <br>
+        <h3>Enabling Physical Interfaces</h3>
+        <p>All that was done here was enabled the router interface.</p>
+        <img src="../assets/media/enableRouter.png" alt="Enabling Physical Interface" class="img-fluid rounded" style="width: 50%; height: auto;">
+        <br>
+        <hr class="text-primary">
+        <br>
+        <h2 class="text-center">Configuring DHCP on the Router for Automatic IP Assignment</h2>
+        <br>
+        <h3>Setting Up DHCP Pools on Router</h3>
+        <p>Needed to make VLANs get their IPs automatically.</p>
+        <img src="../assets/media/dhcpcfg.png" alt="Configuring DHCP" class="img-fluid rounded" style="width: 50%; height: auto;">
+        <p>DHCP automates IP assignment, reducing the need for manual configuration.</p>
+        <br>
+        <h3>Excluding Router IP from DHCP</h3>
+        <p>Had to configure the DHCP from giving out the routers IP.</p>
+        <img src="../assets/media/excludeip.png" alt="Excluding Router IP from DHCP" class="img-fluid rounded" style="width: 50%; height: auto;">
+        <p>This ensures the router's IP is not assigned to any device.</p>
+        <br>
+        <hr class="text-primary">
+        <br>
+        <h2>Testing Connectivity</h2>
+        <p>First set each PCs network adaptor to DHCP</p>
+        <p>Used the command prompt to then verify correct IPv4 address.</p>
+        <img src="../assets/media/ipconfig.png" alt="Testing Connectivity" class="img-fluid rounded" style="width: 50%; height: auto;">
+        <br>
+        <br>
+        <p>Also had to check if PCs can ping eachother.</p>
+        <img src="../assets/media/pingip.png" alt="Testing Connectivity" class="img-fluid rounded" style="width: 50%; height: auto;">
+        <p>Everything looks great! The PC's have correct IP addresses from the VLANs.</p>
+        <br>
+        <hr class="text-primary">
+
+        <footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</footer>  
+</body>
+</html>
