@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Qualifications - Alexander Doyle</title>
-    <link href="../assets/styles.css" rel="stylesheet">
+    <link href="/portfolio-website/assets/styles.css" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -24,9 +24,9 @@
         </header>
 
         <nav>
-            <a href="../index.html">Home</a>
-            <a href="qualifications.html">Qualifications</a>
-            <a href="experience.html">Experience</a>
+            <a href="/portfolio-website/index.html">Home</a>
+            <a href="/portfolio-website/pages/qualifications.html">Qualifications</a>
+            <a href="/portfolio-website/pages/experience.html">Experience</a>
             <a href="https://www.doyle3dprinting.com">3D-Services</a>
             <a href="#contact" onclick="toggleContact()">Contact</a>
         </nav>
@@ -39,13 +39,13 @@
                     <div class="cert-card">
                         <h3>CompTIA A+</h3>
                         <div class="cert-preview">
-                            <embed src="../assets/certs/comptia_aplus.pdf" type="application/pdf" class="cert-pdf" />
+                            <embed src="/portfolio-website/assets/certs/comptia_aplus.pdf" type="application/pdf" class="cert-pdf" />
                         </div>
                         <p>Achieved: July 2025</p>
                         <p>Core hardware and software troubleshooting expertise</p>
                         <div class="cert-actions">
                             <button onclick="openCertModal('comptia_aplus')">View Full Certificate</button>
-                            <a href="../assets/certs/comptia_aplus.pdf" download class="download-btn">Download PDF</a>
+                            <a href="/portfolio-website/assets/certs/comptia_aplus.pdf" download class="download-btn">Download PDF</a>
                         </div>
                     </div>
                     <div class="cert-card">
@@ -80,7 +80,7 @@
                     function openCertModal(certName) {
                         const modal = document.getElementById('certModal');
                         const pdfViewer = document.getElementById('modalCertPdf');
-                        pdfViewer.src = `../assets/certs/${certName}.pdf`;
+                        pdfViewer.src = `/portfolio-website/assets/certs/${certName}.pdf`;
                         modal.style.display = 'flex';
                         document.body.style.overflow = 'hidden';
                     }
