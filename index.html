@@ -1,166 +1,90 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Alexander's Portfolio</title>
-    <link href="/assets/styles.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-  </head>
-  
-  <body data-bs-theme="dark"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexander Doyle - Portfolio</title>
+    <link href="assets/styles.css" rel="stylesheet">
+        }
+</head>
+<body data-bs-theme="dark">
+    <div class="container border-custom py-4">
+        <!-- Surreal floating elements -->
+        <div class="surreal-element" style="top: 10%; left: 5%;">✞</div>
+        <div class="surreal-element" style="top: 30%; right: 15%;">⚚</div>
+        <div class="surreal-element" style="bottom: 20%; left: 20%;">♫</div>
+        <div class="surreal-element" style="bottom: 40%; right: 10%;">☢</div>
+        <div class="surreal-element" style="top: 50%; left: 50%;">⚡</div>
+        <div class="surreal-element" style="top: 70%; right: 30%;">⚔</div>
+        <div class="surreal-element" style="bottom: 60%; left: 40%;">☮</div>
+        <div class="surreal-element" style="bottom: 10%; right: 25%;">⚛</div>
 
-<!-- Nav Bar -->
+        <header class="text-center mb-5">
+            <h1 class="display-4 text-accent glitch mb-3" data-text="ALEXANDER DOYLE">ALEXANDER DOYLE</h1>
+            <div class="text-muted fst-italic">CLOUD COMPUTING & IT PROFESSIONAL • COMPTIA A+ CERTIFIED</div>
+        </header>
 
+        <nav class="nav justify-content-center gap-4 mb-5">
+            <a class="text-decoration-none text-light" href="index.html">Home</a>
+            <a class="text-decoration-none text-light" href="pages/qualifications.html">Qualifications</a>
+            <a class="text-decoration-none text-light" href="pages/experience.html">Experience</a>
+            <a class="text-decoration-none text-light" href="https://www.doyle3dprinting.com">3D-Services</a>
+            <a class="text-decoration-none text-light" href="#contact" onclick="toggleContact()">Contact</a>
+        </nav>
 
-<nav style="background-color: #e3f2fd;" data-bs-theme="light">
-<ul class="nav navbar justify-content-center nav-pills nav-fill" style="margin-left: 5%;">
-  <li class="nav-item">
-    <a class="nav-link active bg-dark" aria-current="page" href="#">Home</a>
-  </li>
+        <main>
+            <section class="post">
+                <h2 class="post-title">Welcome to My IT Portfolio</h2>
+                <div class="post-meta">Cloud Computing & IT Professional • Associate's Degree in Cloud Computing & IT</div>
+                <div class="post-content">
+                    <p>Hello! I'm Alexander Doyle, a dedicated IT professional based in Palmetto, Florida. With a CompTIA A+ certification and actively pursuing Network+ and Security+ certifications, I combine academic knowledge from my Associate's degree in Cloud Computing & IT with hands-on experience in system administration and network technologies.</p>
+                    <ul>
+                        <li><strong>Technical Skills:</strong> Active Directory, Microsoft 365, VirtualBox, Azure, Firewall & Antivirus, Remote Support Tools, Cisco Packet Tracer</li>
+                        <li><strong>Core Competencies:</strong> Hardware/Software Troubleshooting, Operating Systems, Networking, Security Principles, Identity and Access Management</li>
+                        <li><strong>Professional Experience:</strong> Retail Sales Leadership, Customer Service Excellence, Team Management</li>
+                    </ul>
+                    <p>Beyond traditional IT services, I offer:</p>
+                    <ul>
+                        <li><strong>3D Printing Services:</strong> Professional quality prints, custom projects, and prototyping solutions with live monitoring capabilities</li>
+                        <li><strong>Web Development:</strong> Custom website creation, portfolio development, and web presence optimization</li>
+                        <li><strong>Technical Consulting:</strong> Personalized IT solutions and infrastructure planning for small businesses</li>
+                    </ul>
+                    <p>Explore my qualifications and services to see how my blend of technical expertise and creative solutions can benefit your projects.</p>
+                </div>
+            </section>
+        </main>
 
-  <li class="nav-item">
-    <a class="nav-link" style="color:black;" href="/pages/qualifications.html">Qualifications</a>
-  </li>
+        <footer>
+            <p>© 2025 PROFESSIONAL PORTFOLIO • ALEXANDER DOYLE</p>
+            <p>Palmetto, FL • Secure Infrastructure & Creative Solutions</p>
+        </footer>
 
-  <li class="nav-item">
-    <a class="nav-link" style="color:black;" href="http://www.doyle3dprinting.com/">Services</a>
-  </li>
-
-    <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" style="color:black;" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Contact</a>
-    <ul class="dropdown-menu bg-dark text-light">
-      <div class="px-4 py-3">
-    <div class="mb-3">
-      <label for="exampleDropdownFormEmail1" class="form-label">Email address:</label>
-      <p>doylealex27@gmail.com</p>
-    </div>
-    <br>
-    <div class="mb-3">
-      <label for="exampleDropdownFormPassword1" class="form-label">Phone:</label>
-      <p>(727) 455-9111</p>
-    </div>
-    <br>
-    <div class="mb-3">
-      <label for="exampleDropdownFormPassword1" class="form-label">Located in:</label>
-      <p>Palmetto, FL 34221</p>
-    </div>
-  </div>
-  <div class="dropdown-divider"></div>
-<div class="btn-group" role="group" aria-label="Basic mixed styles example" style="margin-left: 11%;">
-  <a type="button" class="btn btn-outline-light" href="https://www.linkedin.com/in/alexander-doyle-information-technology">LinkedIN</a>
-  <a type="button" class="btn btn-outline-light" href="https://github.com/ony-x808">github</a>  
-</div>  
-</ul>
-  </li>
-</ul>
-</nav>
-
-<br>
-
-<div class="container">
-
-  <div class="row">
-     
-    <!-- Landing card/Sumarry -->
-
-    <div class="col-md-8">
-<div class="card text-bg-dark position-relative mbd-maincd-size">
-  <img src="/assets/images/me2.png" class="card-img" alt="Main card">
-  <div class="card-img-overlay">
-    <h3 class="card-title position-absolute top-0">Alexander Doyle</h3>
-    <div class="position-absolute bottom-0 start-0 end-0 px-3 pb-2">
-      <div class="bg-body-secondary border p-3"> <!-- Single container for both -->
-        <h4 class="card-title">Secure Infrastructure Specialist</h4>
-        <p class="mb-0">IT is my passion and profession. With CompTIA A+ and Network+ certifications (and Security+ on the way), I thrive on building, securing, and optimizing systems. My hands-on experience ranges from network troubleshooting to cloud projects, all backed by an Associate's in Information Technology (completing Dec 2025).</p>
-      </div>
-    </div>
-  </div>
-</div>
-    </div>
-
-    <!-- Certifications -->
-
-    <div class="col-md-4">
-      <!-- Carousel -->
-      <div id="carouselExampleDark" class="carousel carousel-dark slide mb-3 mbd-caro-marg">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="A+ Certification"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Network+ Certification"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Security+ Certification"></button>
+        <!-- Contact Popup -->
+        <div class="contact-overlay" id="contactOverlay"></div>
+        <div class="contact-popup" id="contactPopup">
+            <button class="close-btn" onclick="closeContact()">&times;</button>
+            <h2>Get In Touch</h2>
+            <p>I'm always interested in new opportunities and collaborations.</p>
+            <div class="post-meta">Based in Palmetto, FL • Available for Remote & Local Work</div>
+            <div class="social-links">
+                <a href="https://github.com/yourusername" target="_blank">GitHub Profile</a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+            </div>
+            <p><strong>Email:</strong> doylealex27@gmail.com</p>
+            <p><strong>Phone:</strong> (727) 455-9111</p>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="10000">
-            <img src="/assets/images/2201102cert.png" class="d-block w-100 img-fluid rounded" alt="CompTIA 220 1100 A+ Certification">
-            <div class="carousel-caption d-none d-md-block">
-              <a type="button" class="btn btn-dark" href="/pages/qualifications.html">ComptTIA A+</a>
-            </div>
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img src="/assets/images/2201102cert.png" class="d-block w-100" alt="Slide 2">
-            <div class="carousel-caption d-none d-md-block">
-              <a type="button" class="btn btn-dark" href="/pages/qualifications.html">ComptTIA Network+</a>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="/assets/images/2201102cert.png" class="d-block w-100" alt="Slide 3">
-            <div class="carousel-caption d-none d-md-block">
-              <a type="button" class="btn btn-dark" href="/pages/qualifications.html">ComptTIA Security+</a>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-      <br><br><br>
 
+        <script>
+            function toggleContact() {
+                document.getElementById('contactPopup').style.display = 'block';
+                document.getElementById('contactOverlay').style.display = 'block';
+            }
 
-      <!-- Resume below carousel -->
-      <div class="card mb-3" style="max-width: 540px;">
-  <div class="row">
-    <div class="col-md-6">
-      <img src="/assets/images/resumeimg.png" class="img-fluid rounded-start h-100" alt="...">
+            function closeContact() {
+                document.getElementById('contactPopup').style.display = 'none';
+                document.getElementById('contactOverlay').style.display = 'none';
+            }
+        </script>
     </div>
-    <div class="col-md-6">
-      <div class="card-body">
-        <h5 class="card-title">Resume</h5>
-        <br>
-        <p class="card-text">Check out my resume!</p>
-        <p class="card-text">Lists many of my skills and achievements.</p>
-        <br>
-        <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop">View</button>
-  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog modal-xl modal-dialog-centered">
-    <div class="modal-content" style="height: 90vh;">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="staticBackdropLabel">Alexander Doyle's Resume</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body p-0" style="height: 80vh;">
-        <iframe src="/assets/other/doyleResume.pdf" width="100%" height="100%" style="border:0; min-height: 100%;"></iframe>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-      </div>
-    </div>
-  </div>
-</div>
-  </div>
-</div>
-    
-
-<footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-</footer>  
 </body>
 </html>
