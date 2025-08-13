@@ -58,7 +58,29 @@
                         <embed id="modalCertPdf" src="" type="application/pdf" width="100%" height="100%" />
                     </div>
                 </div>
+                            <script>
+                    function openCertModal(certName) {
+                        const modal = document.getElementById('certModal');
+                        const pdfViewer = document.getElementById('modalCertPdf');
+                        pdfViewer.src = `../assets/certs/${certName}.pdf`;
+                        modal.style.display = 'flex';
+                        document.body.style.overflow = 'hidden';
+                    }
 
+                    function closeCertModal() {
+                        const modal = document.getElementById('certModal');
+                        modal.style.display = 'none';
+                        document.body.style.overflow = 'auto';
+                    }
+
+                    // Close modal when clicking outside
+                    window.onclick = function(event) {
+                        const modal = document.getElementById('certModal');
+                        if (event.target == modal) {
+                            closeCertModal();
+                        }
+                    }
+                </script>
             </section>
             
             <section class="post">
