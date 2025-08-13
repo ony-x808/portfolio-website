@@ -33,6 +33,34 @@
 
         <main>
             <!-- Certifications Section -->
+                        <section class="post">
+                <h2 class="post-title">CompTIA Stackable Certifications</h2>
+                <div class="certification-grid">
+                    <div class="cert-card">
+                        <h3>CIOS (CompTIA IT Operations Specialist)</h3>
+                        <div class="cert-preview">
+                            <embed src="#" type="application/pdf" class="cert-pdf" />
+                        </div>
+                        <p>Achieved: Aug 2025</p>
+                        <p>Core hardware and software troubleshooting expertise</p>
+                        <div class="cert-actions">
+                            <button onclick="openCertModal('comptia_aplus')">View Full Certificate</button>
+                            <a href="../assets/certs/comptia_aplus.pdf" download class="download-btn">Download PDF</a>
+                        </div>
+                    </div>
+                                        
+                </div>
+
+                <!-- Certificate Modal -->
+                <div id="certModal" class="cert-modal">
+                    <div class="modal-content">
+                        <span class="close-modal" onclick="closeCertModal()">&times;</span>
+                        <embed id="modalCertPdf" src="" type="application/pdf" width="100%" height="100%" />
+                    </div>
+                </div>
+
+            </section>
+            
             <section class="post">
                 <h2 class="post-title">Professional Certifications</h2>
                 <div class="certification-grid">
