@@ -28,21 +28,7 @@
     </style>
 </head>
 <body>
-        <div class="sidebar-overlay">
-            <button class="sidebar-toggle" onclick="toggleSidebar()">
-                <span class="arrow">›</span>
-                <span>Navigate</span>
-            </button>
-            <nav class="sidebar-nav">
-                <ul>
-                    <li><a href="#stackable" onclick="scrollToSection('stackable')">Stackable Certifications</a></li>
-                    <li><a href="#professional" onclick="scrollToSection('professional')">Professional Certifications</a></li>
-                    <li><a href="#application" onclick="scrollToSection('application')">Application-Based Certifications</a></li>
-                    <li><a href="#education" onclick="scrollToSection('education')">Education</a></li>
-                    <li><a href="#skills" onclick="scrollToSection('skills')">Technical Proficiencies</a></li>
-                </ul>
-            </nav>
-        </div>
+
         <div class="main-content-center">
             <div class="container">
                 <!-- Surreal floating elements -->
@@ -252,18 +238,7 @@
                     document.getElementById('contactOverlay').style.display = 'none';
                 }
 
-                function scrollToSection(sectionId) {
-                    const section = document.getElementById(sectionId);
-                    if (section) {
-                        section.scrollIntoView({ behavior: 'smooth' });
-                        // Auto-close sidebar after clicking a link
-                        document.querySelector('.sidebar-overlay').classList.remove('active');
-                    }
-                }
-
-                function toggleSidebar() {
-                    document.querySelector('.sidebar-overlay').classList.toggle('active');
-                }
+    
             </script>
     </body>
 </html>
